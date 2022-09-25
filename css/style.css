@@ -146,6 +146,12 @@ p{
         width: 100%;
     }
 
+    .mapa{
+        display: flex;
+        display: column;
+        align-items: center;
+    }
+
     img{
         height: auto;
         width: 100%;
