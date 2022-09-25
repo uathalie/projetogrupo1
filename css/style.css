@@ -49,7 +49,7 @@ p{
     margin-right: 3%;
     border: 1px;
     padding: 10px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #d9d9d9;
 }
 
 .textofeedback1 p{
@@ -68,7 +68,7 @@ p{
     margin-right: 3%;
     border: 1px;
     padding: 10px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #d9d9d9;
 }
 
 .feedback3{
@@ -79,7 +79,7 @@ p{
     margin-top: 15px;
     border: 1px;
     padding: 10px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #d9d9d9;
 }
 
 .localizacao{
@@ -137,19 +137,23 @@ p{
         height: 200px;
         width: 100%;
     }
-    
+
     .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+    }
+
+    .adress{
+        margin-top: 35px;
+        margin-bottom: 0px;
+        height: 135px;
     }
 
     .rodape{
         width: 100%;
-    }
-
-    .mapa{
-        display: flex;
-        display: column;
-        align-items: center;
+        margin-top: 2px;
     }
 
     img{
