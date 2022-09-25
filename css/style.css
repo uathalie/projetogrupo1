@@ -4,9 +4,8 @@
     margin-left: auto;
     margin-right: auto;
     height: 80px;
-    width: 70%;
+    width: 80%;
 }
-
 
 .logo h1{
     font-family: 'Cormorant Garamond', serif;
@@ -28,12 +27,12 @@ p{
     margin-top: 30px;
     margin-bottom: 20px;
     height: 435px;   
-    width: 70%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
 .feedback{
-    width:85%;
+    width: 80%;
     display: flex;
     justify-content: center; 
     margin-right: auto;
@@ -84,7 +83,7 @@ p{
 }
 
 .localizacao{
-    width: 70%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -109,12 +108,46 @@ p{
     margin-left: auto;
     margin-right: auto;
     height: 70px;
-    width: 70%;
+    width: 80%;
     left: 0;
     bottom: 0;
     right: 0
     margin: 0 auto;
     background-color: pink;
 }
+
+@media (max-width: 600px){
+    .cabecalho{
+        margin-bottom: 20px;
+    }
+
+    .feedback,
+    .localizacao{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .feedback1,
+    .feedback2,
+    .feedback3,
+    .adress{
+        height: 200px;
+        width: 100%;
+    }
+    
+    .mapa{
+        width: 100%;
+    }
+
+  img{
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    }
+}
+
 
 /*A partir daqui começa o código da página quem somos*/
