@@ -4,15 +4,43 @@
     <head>
 
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Breshop</title>
+
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">    
     </head>
 
     <body>
 
         <header>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">Loja</a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Contato</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer;float:right" onclick="openNav()">&#9776; </span>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
             <div class="cabecalho">
                 <div class="logo">
@@ -25,35 +53,56 @@
         <main>
 
             <div class="slide">
-                <img src="media/img/slide.gif" style="width:">
+                <img src="media/img/slide.gif" style="width: auto">
             </div>
 
             <div class="feedback">
+
                 <div class="feedback1">
-                    <div class="textofeedback1">
-                    <p>"Achei as roupas incríveis, de ótima qualidade, entrega muito rápida, recomendo muito"</p>
+                    <div class="textoFeedback1">
+                    <p style="font-size:18px">★  ★  ★  ★  ★<br>
+                        <i><p style="font-size:18px">"Achei as roupas incríveis e em ótimo estado de qualidade. Loja aconchegante, vale a visita!"</p></i>
+                        <p style="font-size:16px">Maria L. - Rio de Janeiro</p>
+                    </div>
                 </div>
 
-            </div>
-                <div class="feedback2"></div>
-                <div class="feedback3"></div>
+                <div class="feedback2">
+                    <div class="textoFeedback2">
+                    <p style="font-size:18px">★  ★  ★  ★  ★<br>
+                        <i><p style="font-size:18px">"Atendimento incrível, preço correspondente a qualidade das roupas! Recomendo muito!!!"</p></i>
+                        <p style="font-size:16px">Joana R. - Rio Grande do Sul</p>
+                    </div>
+                </div>
+
+                <div class="feedback3">
+                    <div class="textoFeedback3">
+                    <p style="font-size:18px">★  ★  ★  ★  ★<br></p>
+                        <i><p style="font-size:18px">"É minha 5ª compra na loja... Amei minha calça, coube perfeitamente e chegou muito rápido. Com certeza vou comprar mais."</p></i>
+                        <p style="font-size:16px">Luana P. - São Paulo</p>
+                    </div>
+                </div>
             </div>
             
             <div class="localizacao">
                 <div class="mapa">
                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.337868972638!2d-43.258232385495376!3d-22.863974085033558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997c013902f0c3%3A0xa1ad7b4cb85e0ddb!2sSenac%20Bonsucesso!5e0!3m2!1spt-BR!2sbr!4v1664066079860!5m2!1spt-BR!2sbr" width="370" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="adress">
-                    <address> Rua fantasia, nº10<br>
-                              Cep 12345-678 <br>
-                    </address>Rio de Janeiro - Brasil <br>
+                <div class="endereco">
+                    <p style="font-size: 15px;">Visite nossa loja!</p>
+                    <i><p style="font-family: Times New Roman; font-size: 24px; margin-top: 2px;">Rua Fantasia, nº10<br>
+                        Bonsucesso, RJ
+                    </p></i>
                 </div>
             </div>
 
         </main>
 
         <footer>
-            <div class="rodape"></div>
+            <div class="rodape">
+                <div class="infoRodape">
+                    Visite nossas redes oficiais<br>
+                </div>
+            </div>
         </footer>
 
     </body>

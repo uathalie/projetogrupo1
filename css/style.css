@@ -1,22 +1,58 @@
-.cabecalho{
-    background-color: #FFFFFF;
+body{
+    background-color: white;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
     display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+.cabecalho{
+    display: block;
+    margin-top:0;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     height: 80px;
     width: 80%;
+    background-color: rgb(255, 206, 47);
 }
 
 .logo h1{
     font-family: 'Cormorant Garamond', serif;
-    color: aqua;
+    color: white;
     font-size: 50px;
     text-align: center;
     margin-top: 25px;
-}
-
-p{
-    font-family: 'Oswald', sans-serif;
 }
 
 .slide{
@@ -35,26 +71,33 @@ p{
     width: 80%;
     display: flex;
     justify-content: center; 
+    margin-top: 25px;
     margin-right: auto;
     margin-left: auto;
-    flex-direction: wrap;
+    flex-direction: wrap;    
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    text-align: center;
 }
 
 .feedback1{
     border-radius: 20%;
     background-color: white;
-    height: 250px; 
-    width: 25%;
+    height: 40%; 
+    width: 40%;
     margin-top: 15px;
     margin-right: 3%;
     border: 1px;
     padding: 10px;
     box-shadow: 5px 10px 8px #d9d9d9;
+    text-align: justify;
 }
 
-.textofeedback1 p{
-    font-style: italic;
-    text-align: center;
+.textoFeedback1{
+    text-align: justify;
     color: black;
     font-size: 18px;
 }
@@ -62,24 +105,36 @@ p{
 .feedback2{
     border-radius: 20%;
     background-color: white;
-    height: 250px;    
-    width: 25%;
+    height: 40%;    
+    width: 40%;
     margin-top: 15px;
     margin-right: 3%;
     border: 1px;
     padding: 10px;
     box-shadow: 5px 10px 8px #d9d9d9;
+    text-align: justify;
+}
+
+.textoFeedback2{
+    text-align: justify;
+    color: black;
 }
 
 .feedback3{
     border-radius: 20%;
     background-color: white;
-    height: 250px;   
-    width: 25%;
+    height: 40%;   
+    width: 40%;
     margin-top: 15px;
     border: 1px;
     padding: 10px;
     box-shadow: 5px 10px 8px #d9d9d9;
+    text-align: justify;
+}
+
+.textoFeedback3{
+    text-align: justify;
+    color: black;
 }
 
 .localizacao{
@@ -90,33 +145,49 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.adress{
+.endereco{
     height: 150px;    
     width: 25%;
-    margin-top: 15px;
-    margin-right: 3%;
-    margin-left: 70px;
     font-size: 25px;
+    margin-left: 10px;
+    text-align: left;
 }
-
-.rodape{
-    position: relative;
-    margin-top: 20px;
+        
+footer{
+    background-color: rgb(255, 206, 47);
+    bottom: 0;
+    left: 0;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
-    height: 70px;
-    width: 80%;
+    position: relative; 
+    width: 100%;
+    /*bottom: 0;
     left: 0;
-    bottom: 0;
-    right: 0
-    margin: 0 auto;
+    height: 40px;
+    position:absolute;
+    width: 100%;
     background-color: pink;
+**/
 }
 
-@media (max-width: 600px){
+.infoRodape{
+padding: 10px;
+color: whitesmoke;
+font-size: 20px;
+font-family: 'Oswald', sans-serif;
+}
+
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media (max-width: 800px){
     .cabecalho{
         width: 100%;
     }
@@ -145,10 +216,14 @@ p{
         width: 100%;
     }
 
-    .adress{
-        margin-top: 35px;
+    .endereco{
+        margin-top: 48px;
         margin-bottom: 0px;
         height: 135px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
     .rodape{
