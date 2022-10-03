@@ -1,7 +1,7 @@
 /* PÁGINA INICIAL */
 
 body{
-    background-color: white;
+    background-color: #FFFFFF;
     margin: 0;
 }
 
@@ -12,7 +12,7 @@ body{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(255, 206, 47);
+    background-color: #801207;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -22,7 +22,7 @@ body{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
 }
@@ -39,23 +39,26 @@ body{
     margin-right: 50px;
 }
 
-.slide{
+.mySlides{
+    display:none;
+}
+
+.slides{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    height: 435px;   
-    max-width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
 }
 
 .feedback{
     width: 80%;
     display: flex;
     justify-content: center; 
-    margin-top: 25px;
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     flex-direction: wrap;    
@@ -142,10 +145,8 @@ p{
 }
         
 footer{
-    background-color: rgb(255, 206, 47);
-    bottom: 0;
-    left: 0;
-    height: 80px;
+    background-color: #801207;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     position: relative; 
@@ -154,22 +155,23 @@ footer{
 }
 
 .infoRodape{
-padding: 10px;
-color: whitesmoke;
-font-size: 20px;
-font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 
 /* MOBILE */
 
-@media screen and (max-height: 450px){
+@media screen and (max-height: 700px){
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
 
-@media (max-width: 800px){
-    .cabecalho{
+@media (max-width: 700px){
+
+    body{
         width: 100%;
     }
 
@@ -195,6 +197,7 @@ font-family: 'Oswald', sans-serif;
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-top: 10px;
     }
 
     .endereco{
@@ -207,15 +210,12 @@ font-family: 'Oswald', sans-serif;
         text-align: center;
     }
 
-    .rodape{
+    footer{
         width: 100%;
-        margin-top: 2px;
     }
 
-    img{
-        height: auto;
+    .rodape{
         width: 100%;
-        margin-top: 0px;
     }
 }
 
@@ -240,7 +240,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 
@@ -255,7 +254,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 .img2{
@@ -269,7 +267,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 .img3{
@@ -291,7 +288,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 .img4{
@@ -305,7 +301,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 .img5{
@@ -319,7 +314,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 .img6{
@@ -341,7 +335,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 .img7{
@@ -355,7 +348,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 .img8{
@@ -369,7 +361,6 @@ font-family: 'Oswald', sans-serif;
     border-radius: 10%;
     height: 200px;
     width: 200px;
-    background-color: blueviolet;
     margin: 10px;
 }
 .img9{
@@ -390,13 +381,13 @@ font-family: 'Oswald', sans-serif;
     justify-content: center;
     flex-direction: column;
     padding: 10px 45px;
-    background: rgb(168, 173, 173);
+    background: #801207;
     width: 500px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .estiloContatoDiv h2{
-    color: black;
+    color: white;
     font-size: 2.5rem;
     margin: 2rem;
 }
@@ -408,7 +399,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 .estiloContatoDiv form label{
-    color: black;
+    color: white;
     font-size: 17px;
     margin-bottom: 4px;
 }
@@ -444,14 +435,14 @@ font-family: 'Oswald', sans-serif;
     cursor: pointer;
     font-size: 16px;
     background: transparent;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid white;
+    color: white;
     transition: all 1s;
     margin-bottom: 20px;
 }
 
 .estiloContatoDiv form button:hover{
-    background-color: black;
+    background-color: white;
     color: rgb(217, 223, 223);
     border-radius: 16px;
 }
