@@ -1,7 +1,7 @@
 /* PÁGINA INICIAL */
 
 body{
-    background-color: #FFFFFF;
+    background-color: white;
     margin: 0;
 }
 
@@ -12,7 +12,7 @@ body{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #801207;
+    background-color: rgb(255, 206, 47);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -39,26 +39,23 @@ body{
     margin-right: 50px;
 }
 
-.mySlides{
-    display:none;
-}
-
-.slides{
+.slide{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 435px;   
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .feedback{
     width: 80%;
     display: flex;
     justify-content: center; 
-    margin-top: 20px;
+    margin-top: 25px;
     margin-right: auto;
     margin-left: auto;
     flex-direction: wrap;    
@@ -145,8 +142,10 @@ p{
 }
         
 footer{
-    background-color: #801207;
-    height: 100px;
+    background-color: rgb(255, 206, 47);
+    bottom: 0;
+    left: 0;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
     position: relative; 
@@ -155,23 +154,22 @@ footer{
 }
 
 .infoRodape{
-    padding: 10px;
-    color: whitesmoke;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+padding: 10px;
+color: whitesmoke;
+font-size: 20px;
+font-family: 'Oswald', sans-serif;
 }
 
 
 /* MOBILE */
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 450px){
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
 
-@media (max-width: 700px){
-
-    body{
+@media (max-width: 800px){
+    .cabecalho{
         width: 100%;
     }
 
@@ -197,7 +195,6 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-top: 10px;
     }
 
     .endereco{
@@ -210,12 +207,15 @@ footer{
         text-align: center;
     }
 
-    footer{
-        width: 100%;
-    }
-
     .rodape{
         width: 100%;
+        margin-top: 2px;
+    }
+
+    img{
+        height: auto;
+        width: 100%;
+        margin-top: 0px;
     }
 }
 
@@ -379,14 +379,6 @@ footer{
 
 }
 
-/* QUEM SOMOS */
-
-.textoQuemSomos{
-    width: 65%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 /* CONTATO */
 
