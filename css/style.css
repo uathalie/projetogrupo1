@@ -1,5 +1,8 @@
+/* PÁGINA INICIAL */
+
 body{
-    background-color: white;
+    background-color: #FFFFFF;
+    margin: 0;
 }
 
 .sidenav{
@@ -9,7 +12,7 @@ body{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #801207;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -36,42 +39,26 @@ body{
     margin-right: 50px;
 }
 
-.cabecalho{
-    display: block;
-    margin-top:0;
-    margin-bottom: 20px;
+.mySlides{
+    display:none;
+}
+
+.slides{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: 80px;
-    width: 80%;
-    background-color: rgb(255, 206, 47);
-}
-
-.logo h1{
-    font-family: 'Cormorant Garamond', serif;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 25px;
-}
-
-.slide{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    height: 435px;   
-    max-width: 80%;
-    margin: 0 auto;
+    margin-top: 4px;
 }
 
 .feedback{
     width: 80%;
     display: flex;
     justify-content: center; 
-    margin-top: 25px;
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     flex-direction: wrap;    
@@ -147,48 +134,44 @@ p{
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    gap: 30px;
 }
 
 .endereco{
     height: 150px;    
     width: 25%;
     font-size: 25px;
-    margin-left: 10px;
     text-align: left;
 }
         
 footer{
-    background-color: rgb(255, 206, 47);
-    bottom: 0;
-    left: 0;
-    height: 80px;
+    background-color: #801207;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     position: relative; 
-    width: 100%;
-    /*bottom: 0;
-    left: 0;
-    height: 40px;
-    position:absolute;
-    width: 100%;
-    background-color: pink;
-**/
+    width: 80%;
+    margin-top: 30px;
 }
 
 .infoRodape{
-padding: 10px;
-color: whitesmoke;
-font-size: 20px;
-font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
-@media screen and (max-height: 450px){
+
+/* MOBILE */
+
+@media screen and (max-height: 700px){
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
 
-@media (max-width: 800px){
-    .cabecalho{
+@media (max-width: 700px){
+
+    body{
         width: 100%;
     }
 
@@ -214,6 +197,7 @@ font-family: 'Oswald', sans-serif;
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-top: 10px;
     }
 
     .endereco{
@@ -226,17 +210,256 @@ font-family: 'Oswald', sans-serif;
         text-align: center;
     }
 
-    .rodape{
+    footer{
         width: 100%;
-        margin-top: 2px;
     }
 
-    img{
-        height: auto;
+    .rodape{
         width: 100%;
-        margin-top: 0px;
     }
 }
 
 
-/*A partir daqui começa o código da página quem somos*/
+/* PÁGINA LOJA */
+
+#todosProd{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#conj1{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.prod1{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+
+.img1{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod2{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img2{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod3{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img3{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+#conj2{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.prod4{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img4{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod5{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img5{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod6{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img6{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+#conj3{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.prod7{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img7{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod8{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img8{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+.prod9{
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+.img9{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+/* QUEM SOMOS */
+
+.textoQuemSomos{
+    width: 65%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* CONTATO */
+
+.estiloContatoDiv{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: rgb(168, 173, 173);
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.estiloContatoDiv h2{
+    color: black;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.estiloContatoDiv form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.estiloContatoDiv form label{
+    color: black;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.estiloContatoDiv form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.estiloContatoDiv form input:focus{
+    border-radius: 16px;
+}
+
+.estiloContatoDiv form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.estiloContatoDiv form textarea:focus{
+    border-radius: 16px;
+}
+
+.estiloContatoDiv form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+.estiloContatoDiv form button:hover{
+    background-color: black;
+    color: rgb(217, 223, 223);
+    border-radius: 16px;
+}

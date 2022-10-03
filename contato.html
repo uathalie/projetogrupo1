@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Breshop | Contato</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="loja.html">Loja</a>
+                <a href="quemsomos.html">Quem Somos</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer;float:right" onclick="openNav()">&#9776;</span>
+
+            <script>
+
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                }
+
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+                
+            </script>
+            
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="media/img/breshop.png" style="display: block;margin-right: auto;margin-left: auto; width: 15%;margin-bottom: 20px;margin-top: 10px;">
+                </div>  
+            </div>
+
+        </header>
+
+        <div class="estiloContatoDiv">
+            <h2>Contato</h2>
+                <form action="" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome">
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail">
+                <label for="Mensagem"></label>
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" ></textarea>
+                <button type="submit">Enviar</button>
+                </form>
+        </div>
+
+        <footer>
+            <div class="rodape">
+                <div class="infoRodape">
+                    Visite nossas redes oficiais<br>
+                    <div class="midias">
+                        <a href="#"><img src="media/img/facebook.png" style="width: 30px"></a>
+                        <a href="#"><img src="media/img/twitter.png" style="width: 30px"></a>
+                        <a href="#"><img src="media/img/insta.png" style="width: 30px"></a>
+                        <a href="#"><img src="media/img/tiktok1.png" style="width: 30px"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
