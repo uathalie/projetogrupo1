@@ -11,8 +11,6 @@
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <script src="js/script.js"></script>
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -28,34 +26,15 @@
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <br><br>
                 <a href="index.html">Home</a>
                 <a href="loja.html">Loja</a>
                 <a href="quemsomos.html">Quem Somos</a>
                 <a href="contato.html">Contato</a>
             </div>
-            <span style="font-size:30px;cursor:pointer;float:right;" onclick="openNav()">&#9776; </span>
-
-            <div class="cabecalho">
-                <div class="logo">
-                   <img src="media/img/breshop.png" style="display: block;margin-right: auto;margin-left: auto; width: 15%;margin-bottom: 20px;margin-top: 10px;">
-                </div>  
-            </div>
-
-        </header>
-
-        <main>
-
-            <div class="slides">
-                    <img class="mySlides" src="media/img/3.jpg">
-                    <img class="mySlides" src="media/img/8.jpg">
-                    <img class="mySlides" src="media/img/10.jpg">
-                    <img class="mySlides" src="media/img/9.jpg">
-                    <img class="mySlides" src="media/img/7.jpg">
-                    <img class="mySlides" src="media/img/2.jpg">
-            </div>
+            <span style="font-size:30px;cursor:pointer;float:right" onclick="openNav()">&#9776; </span>
 
             <script>
+
                 function openNav() {
                   document.getElementById("mySidenav").style.width = "250px";
                 }
@@ -63,46 +42,46 @@
                 function closeNav() {
                   document.getElementById("mySidenav").style.width = "0";
                 }
-                
-                var slideIndex = 0;
-                carousel();
 
-                function carousel() {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none"; 
-                  }
-                  slideIndex++;
-                  if (slideIndex > x.length) {slideIndex = 1} 
-                  x[slideIndex-1].style.display = "block"; 
-                  setTimeout(carousel, 2000); 
-}
             </script>
+
+            <div class="cabecalho">
+                <div class="logo">
+                    <img src="media/img/breshop.png" style="display: block;margin-right: auto;margin-left: auto; width: 15%;margin-bottom: 20px;margin-top: 10px;">
+                </div>  
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="slide">
+                <img src="media/img/slide.gif" style="width: auto">
+            </div>
 
             <div class="feedback">
 
                 <div class="feedback1">
                     <div class="textoFeedback1">
                     <p style="font-size:18px">★  ★  ★  ★  ★<br>
-                        <i><p style="font-family:'Georgia',serif;font-size:18px">"Achei as roupas incríveis e em ótimo estado de qualidade. Loja aconchegante, vale a visita!"</p></i>
-                        <p style="font-size:17px"><b>Maria L. - Rio de Janeiro</b></p>
+                        <i><p style="font-size:18px">"Achei as roupas incríveis e em ótimo estado de qualidade. Loja aconchegante, vale a visita!"</p></i>
+                        <p style="font-size:16px">Maria L. - Rio de Janeiro</p>
                     </div>
                 </div>
 
                 <div class="feedback2">
                     <div class="textoFeedback2">
                     <p style="font-size:18px">★  ★  ★  ★  ★<br>
-                        <i><p style="font-family:'Georgia',serif; font-size:18px">"Atendimento incrível, preço correspondente a qualidade das roupas! Recomendo muito!!!"</p></i>
-                        <p style="font-size:17px"><b>Joana R. - Rio Grande do Sul</b></p>
+                        <i><p style="font-size:18px">"Atendimento incrível, preço correspondente a qualidade das roupas! Recomendo muito!!!"</p></i>
+                        <p style="font-size:16px">Joana R. - Rio Grande do Sul</p>
                     </div>
                 </div>
 
                 <div class="feedback3">
                     <div class="textoFeedback3">
                     <p style="font-size:18px">★  ★  ★  ★  ★<br></p>
-                        <i><p style="font-family:'Georgia',serif;font-size:18px">"É minha 5ª compra na loja... Amei a calça, coube perfeitamente e chegou muito rápido. Com certeza vou comprar mais."</p></i>
-                        <p style="font-size:17px"><b>Luana P. - São Paulo</b></p>
+                        <i><p style="font-size:18px">"É minha 5ª compra na loja... Amei minha calça, coube perfeitamente e chegou muito rápido. Com certeza vou comprar mais."</p></i>
+                        <p style="font-size:16px">Luana P. - São Paulo</p>
                     </div>
                 </div>
             </div>
@@ -112,11 +91,9 @@
                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.337868972638!2d-43.258232385495376!3d-22.863974085033558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997c013902f0c3%3A0xa1ad7b4cb85e0ddb!2sSenac%20Bonsucesso!5e0!3m2!1spt-BR!2sbr!4v1664066079860!5m2!1spt-BR!2sbr" width="370" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="endereco">
-                    <p style="font-size: 18px;"><b>Visite nossa loja!<br>
-                    Aberta de segunda a sexta<br>
-                    das 09 às 18h</b></p>
-                    <i><p style="font-family: Georgia; font-size: 18px; margin-top: 2px;">Rua Fantasia, nº10<br>
-                        Bonsucesso, RJ<br>
+                    <p style="font-size: 15px;">Visite nossa loja!</p>
+                    <i><p style="font-family: Times New Roman; font-size: 24px; margin-top: 2px;">Rua Fantasia, nº10<br>
+                        Bonsucesso, RJ
                     </p></i>
                 </div>
             </div>
@@ -127,8 +104,8 @@
             <div class="rodape">
                 <div class="infoRodape">
                     Visite nossas redes oficiais<br>
-                    <div class="midias" style="margin-top: 10px">
-                        <a href="#"><img src="media/img/facebook.png" style="width: 30px;"></a>
+                    <div class="midias">
+                        <a href="#"><img src="media/img/facebook.png" style="width: 30px"></a>
                         <a href="#"><img src="media/img/twitter.png" style="width: 30px"></a>
                         <a href="#"><img src="media/img/insta.png" style="width: 30px"></a>
                         <a href="#"><img src="media/img/tiktok1.png" style="width: 30px"></a>
